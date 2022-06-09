@@ -69,11 +69,7 @@ public class UserController {
 		
 	}
 
-@GetMapping("/profile")
-	public ResponseEntity<?> userProfile(@RequestHeader(required=false, value="user-mail")String email)
-	{
-		return ResponseEntity.ok(userService.getUser(email));
-	}
+
 	
 	
 	
